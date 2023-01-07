@@ -2,8 +2,8 @@
 driver:
   name: vagrant
 
-## The forwarded_port port feature lets you connect to ports on the VM guest
-## via localhost on the host.
+## The forwarded_port port feature lets you connect to ports on the VM guest via
+## localhost on the host.
 ## see also: https://www.vagrantup.com/docs/networking/forwarded_ports
 
 #  network:
@@ -11,6 +11,10 @@ driver:
 
 provisioner:
   name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: true
 
   ## product_name and product_version specifies a specific Chef product and version to install.
   ## see the Chef documentation for more details: https://docs.chef.io/workstation/config_yml_kitchen/
@@ -27,9 +31,12 @@ platforms:
 suites:
   - name: source
     run_list:
-    - recipe[unirCookbooks::add]
+      - recipe[ansible::source]
+    attributes:
+    source:
+      install_method_one: "source"
 
-  - name: default
     verifier:
       inspec_tests:
         - test/integration/default
+    attributes:
