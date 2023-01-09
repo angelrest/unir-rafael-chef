@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: C:/Users/Angel/Unir/HAD/chef-apache/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/pkg-mysql-centos-78/.vagrant/machines/default/virtualbox/private_key
+last_action: create
+last_error: Kitchen::ActionFailed

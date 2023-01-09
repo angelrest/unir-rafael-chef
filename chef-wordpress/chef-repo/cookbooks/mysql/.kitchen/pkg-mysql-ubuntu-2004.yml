@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: C:/Devops/Herramientas_de_automatizacion_de_despliegue/practica/tarea2/chef-wordpress/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/pkg-mysql-ubuntu-2004/.vagrant/machines/default/virtualbox/private_key
+last_action: create
+last_error: Kitchen::ActionFailed

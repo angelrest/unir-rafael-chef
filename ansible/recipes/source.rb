@@ -22,10 +22,7 @@
         action :update
     end
 
-    package 'ansible' do
+    package 'mysql-server' do
         action :install
     end
 
-    log 'call a notification' do
-        notifies :install, 'package[ansible]', :immediately
-    end

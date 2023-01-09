@@ -1,0 +1,118 @@
+I, [2023-01-07T22:44:50.394755 #31128]  INFO -- default-centos-78: -----> Cleaning up any prior instances of <default-centos-78>
+I, [2023-01-07T22:44:50.395848 #31128]  INFO -- default-centos-78: -----> Destroying <default-centos-78>...
+I, [2023-01-07T22:44:50.398938 #31128]  INFO -- default-centos-78: Finished destroying <default-centos-78> (0m0.00s).
+I, [2023-01-07T22:44:50.400269 #31128]  INFO -- default-centos-78: -----> Testing <default-centos-78>
+I, [2023-01-07T22:44:50.400972 #31128]  INFO -- default-centos-78: -----> Creating <default-centos-78>...
+I, [2023-01-07T22:44:54.116447 #31128]  INFO -- default-centos-78: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2023-01-07T22:44:55.893358 #31128]  INFO -- default-centos-78: ==> default: Box 'bento/centos-7.8' could not be found. Attempting to find and install...
+I, [2023-01-07T22:44:55.893591 #31128]  INFO -- default-centos-78:     default: Box Provider: virtualbox
+I, [2023-01-07T22:44:55.893755 #31128]  INFO -- default-centos-78:     default: Box Version: >= 0
+I, [2023-01-07T22:44:56.445672 #31128]  INFO -- default-centos-78: The box 'bento/centos-7.8' could not be found or
+I, [2023-01-07T22:44:56.446112 #31128]  INFO -- default-centos-78: could not be accessed in the remote catalog. If this is a private
+I, [2023-01-07T22:44:56.446315 #31128]  INFO -- default-centos-78: box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+I, [2023-01-07T22:44:56.446495 #31128]  INFO -- default-centos-78: `vagrant login`. Also, please double-check the name. The expanded
+I, [2023-01-07T22:44:56.446710 #31128]  INFO -- default-centos-78: URL and error message are shown below:
+I, [2023-01-07T22:44:56.446893 #31128]  INFO -- default-centos-78: 
+I, [2023-01-07T22:44:56.447082 #31128]  INFO -- default-centos-78: URL: ["https://vagrantcloud.com/bento/centos-7.8"]
+I, [2023-01-07T22:44:56.447267 #31128]  INFO -- default-centos-78: Error: schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - La funci¾n de revocaci¾n no puede comprobar la revocaci¾n para el certificado.
+E, [2023-01-07T22:44:56.472132 #31128] ERROR -- default-centos-78: Create failed on instance <default-centos-78>.
+E, [2023-01-07T22:44:56.472432 #31128] ERROR -- default-centos-78: ------Exception-------
+E, [2023-01-07T22:44:56.472596 #31128] ERROR -- default-centos-78: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2023-01-07T22:44:56.472749 #31128] ERROR -- default-centos-78: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/centos-7.8' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/centos-7.8' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/bento/centos-7.8"]
+Error: schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - La funci¾n de revocaci¾n no puede comprobar la revocaci¾n para el certificado.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2023-01-07T22:44:56.472902 #31128] ERROR -- default-centos-78: ----------------------
+E, [2023-01-07T22:44:56.473051 #31128] ERROR -- default-centos-78: ------Backtrace-------
+E, [2023-01-07T22:44:56.473206 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2023-01-07T22:44:56.473323 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2023-01-07T22:44:56.473479 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:484:in `run_command'
+E, [2023-01-07T22:44:56.473664 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:431:in `run'
+E, [2023-01-07T22:44:56.473787 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:535:in `run_vagrant_up'
+E, [2023-01-07T22:44:56.473888 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:119:in `create'
+E, [2023-01-07T22:44:56.473989 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `public_send'
+E, [2023-01-07T22:44:56.474091 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2023-01-07T22:44:56.474193 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2023-01-07T22:44:56.474314 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2023-01-07T22:44:56.474417 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2023-01-07T22:44:56.474515 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-01-07T22:44:56.474613 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-07T22:44:56.474710 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:523:in `action'
+E, [2023-01-07T22:44:56.474831 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2023-01-07T22:44:56.474972 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:404:in `create_action'
+E, [2023-01-07T22:44:56.475077 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-01-07T22:44:56.475178 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-01-07T22:44:56.475277 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-01-07T22:44:56.475374 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `each'
+E, [2023-01-07T22:44:56.475487 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-01-07T22:44:56.475586 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2023-01-07T22:44:56.475684 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2023-01-07T22:44:56.475782 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-07T22:44:56.475982 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:186:in `test'
+E, [2023-01-07T22:44:56.476107 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-01-07T22:44:56.476228 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-01-07T22:44:56.476333 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-01-07T22:44:56.476437 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-01-07T22:44:56.476540 #31128] ERROR -- default-centos-78: ----End Backtrace-----
+E, [2023-01-07T22:44:56.476657 #31128] ERROR -- default-centos-78: ---Nested Exception---
+E, [2023-01-07T22:44:56.476759 #31128] ERROR -- default-centos-78: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2023-01-07T22:44:56.476881 #31128] ERROR -- default-centos-78: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/centos-7.8' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/centos-7.8' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/bento/centos-7.8"]
+Error: schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - La funci¾n de revocaci¾n no puede comprobar la revocaci¾n para el certificado.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2023-01-07T22:44:56.477061 #31128] ERROR -- default-centos-78: ----------------------
+E, [2023-01-07T22:44:56.477171 #31128] ERROR -- default-centos-78: ------Backtrace-------
+E, [2023-01-07T22:44:56.477275 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2023-01-07T22:44:56.477380 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2023-01-07T22:44:56.477499 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:484:in `run_command'
+E, [2023-01-07T22:44:56.477617 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:431:in `run'
+E, [2023-01-07T22:44:56.477734 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:535:in `run_vagrant_up'
+E, [2023-01-07T22:44:56.477852 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.12.1/lib/kitchen/driver/vagrant.rb:119:in `create'
+E, [2023-01-07T22:44:56.477968 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `public_send'
+E, [2023-01-07T22:44:56.478105 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2023-01-07T22:44:56.478226 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2023-01-07T22:44:56.478342 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2023-01-07T22:44:56.478443 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2023-01-07T22:44:56.478543 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-01-07T22:44:56.478644 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-07T22:44:56.478744 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:523:in `action'
+E, [2023-01-07T22:44:56.478842 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2023-01-07T22:44:56.478943 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:404:in `create_action'
+E, [2023-01-07T22:44:56.479065 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-01-07T22:44:56.479174 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-01-07T22:44:56.479277 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-01-07T22:44:56.479379 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `each'
+E, [2023-01-07T22:44:56.479480 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-01-07T22:44:56.479582 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2023-01-07T22:44:56.479678 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2023-01-07T22:44:56.479774 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-07T22:44:56.479870 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:186:in `test'
+E, [2023-01-07T22:44:56.479966 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-01-07T22:44:56.480065 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-01-07T22:44:56.480179 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-01-07T22:44:56.480301 #31128] ERROR -- default-centos-78: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-01-07T22:44:56.480448 #31128] ERROR -- default-centos-78: ----End Backtrace-----

@@ -1,0 +1,38 @@
+---
+# Configure the driver (cloud/hypervisor)
+driver:
+  name: vagrant
+
+# Configure the provisioner (config management)
+provisioner:
+  name: chef_zero
+
+# Configure the verifier (testing framework)
+verifier:
+  name: inspec
+
+# Enumerate platforms
+# A platform represents a single configuration of an operating system
+# While this is often 1:1, the names allow this to be customizable
+# At least 1 platform is **required**
+platforms:
+  # Drivers may support defaults that automatically
+  # map certain names to an image for the given driver
+  - name: ubuntu-18.04
+  - name: centos-7.8
+
+# Enumerate suites
+# At least 1 suite is **required**
+suites:
+  # The name of each suite maps to a configuration / set of tests
+  # Depending on the verifier, default locations may be inferred based on
+  # directory naming
+  - name: default
+    run_list:
+      - recipe[wp-cli::default]
+    excludes:
+      - centos-7.8
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:

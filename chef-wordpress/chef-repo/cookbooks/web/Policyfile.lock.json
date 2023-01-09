@@ -1,0 +1,42 @@
+{
+  "revision_id": "455981641a56b492c15cb5ad4b2636ce72a0d7dcb5ab090e57ac51f00e277fe0",
+  "name": "web",
+  "run_list": [
+    "recipe[web::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "web": {
+      "version": "0.1.0",
+      "identifier": "2872835244dcddd3790bfe7368c401ce0bd69dad",
+      "dotted_decimal_identifier": "11384907414953181.59524312506525892.1984473505197",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "web",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "web (0.1.0)": [
+
+      ]
+    }
+  }
+}

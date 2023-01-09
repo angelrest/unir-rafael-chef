@@ -1,0 +1,42 @@
+{
+  "revision_id": "aceb26b907d4505c2453b752ff5c85599c01eb80fdff7324d38810c7aa17430c",
+  "name": "mysql",
+  "run_list": [
+    "recipe[mysql::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "mysql": {
+      "version": "0.1.0",
+      "identifier": "32452dae05e99a5019a38d67a907ddbf8be26147",
+      "dotted_decimal_identifier": "14149811331000730.22546188379597063.243814755361095",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "mysql",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "mysql (0.1.0)": [
+
+      ]
+    }
+  }
+}

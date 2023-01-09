@@ -1,0 +1,42 @@
+{
+  "revision_id": "801c88c0776541c772894727a42c2e40201c5dad46e2d1111b37a0abfb052665",
+  "name": "wp-cli",
+  "run_list": [
+    "recipe[wp-cli::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "wp-cli": {
+      "version": "0.1.0",
+      "identifier": "19f204b480d8109451530b257f84d6fe93889b4d",
+      "dotted_decimal_identifier": "7302976439900176.41747713664319364.236388885240653",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "wp-cli",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "wp-cli (0.1.0)": [
+
+      ]
+    }
+  }
+}

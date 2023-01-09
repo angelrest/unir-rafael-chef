@@ -1,0 +1,486 @@
+PS C:\Users\Angel\Unir\HAD\chef-wordpress> vagrant up     
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/bionic64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/bionic64' version '20221207.0.0' is up to date...
+==> default: Setting the name of the VM: chefVagrant
+==> default: Using hostname "chefVagrant" as node name for Chef...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+    default: Adapter 2: hostonly
+==> default: Forwarding ports...
+    default: 80 (guest) => 8080 (host) (adapter 1)
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection aborted. Retrying...
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection aborted. Retrying...
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 5.2.42
+    default: VirtualBox Version: 7.0
+==> default: Setting hostname...
+==> default: Configuring and enabling network interfaces...
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/Angel/Unir/HAD/chef-wordpress
+    default: /tmp/vagrant-chef/6d400ed4238740ee097d17c9213c7b42/cookbooks => C:/Users/Angel/Unir/HAD/chef-wordpress/chef-repo/cookbooks
+==> default: Running provisioner: shell...
+    default: Running: inline script
+    default: Get:1 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+    default: Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+    default: Get:3 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2518 kB]
+    default: Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+    default: Get:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [83.3 kB]
+    default: Get:6 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+    default: Get:7 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [436 kB]
+    default: Get:8 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1053 kB]
+    default: Get:9 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [146 kB]
+    default: Get:10 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1253 kB]
+    default: Get:11 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [290 kB]
+    default: Get:12 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+    default: Get:13 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.1 kB]
+    default: Get:14 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3908 B]
+    default: Get:15 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+    default: Get:16 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+    default: Get:17 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2852 kB]
+    default: Get:18 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [523 kB]
+    default: Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1083 kB]
+    default: Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [150 kB]
+    default: Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1866 kB]
+    default: Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [404 kB]
+    default: Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.7 kB]
+    default: Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6088 B]
+    default: Get:25 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB]
+    default: Get:26 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB]
+    default: Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.1 kB]
+    default: Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8668 B]
+    default: Fetched 26.8 MB in 35s (759 kB/s)
+    default: Reading package lists...
+    default:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    default:                                  Dload  Upload   Total   Spent    Left  Speed
+100   152  100   152    0     0     38      0  0:00:04  0:00:03  0:00:01    38
+100   153  100   153    0     0     34      0  0:00:04  0:00:04 --:--:--    34
+100 23526  100 23526    0     0   2105      0  0:00:11  0:00:11 --:--:--  5632
+    default: ubuntu 18.04 x86_64
+    default: Getting information for chef stable  for ubuntu...
+    default: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=18.04&m=x86_64
+    default:   to file /tmp/install.sh.2719/metadata.txt
+    default: trying wget...
+    default: sha1       f45a7ee73a346deba2a52fd7b03b4a0e80f24762
+    default: sha256     56856c196c5b38ed918bc7c489652896cf30fab9bbcc8def14b9576e59e681f4
+    default: url        https://packages.chef.io/files/stable/chef/18.1.0/ubuntu/18.04/chef_18.1.0-1_amd64.deb
+    default: version    18.1.0
+    default: downloaded metadata file looks valid...
+    default: downloading https://packages.chef.io/files/stable/chef/18.1.0/ubuntu/18.04/chef_18.1.0-1_amd64.deb
+    default:   to file /tmp/install.sh.2719/chef_18.1.0-1_amd64.deb
+    default: trying wget...
+    default: Comparing checksum with sha256sum...
+    default: 
+    default: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+    default:
+    default: You are installing a package without a version pin.  If you are installing
+    default: on production servers via an automated process this is DANGEROUS and you will
+    default: be upgraded without warning on new releases, even to new major releases.
+    default: Letting the version float is only appropriate in test, development or
+    default: CI/CD environments.
+    default:
+    default: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+    default:
+    default: Installing chef
+    default: installing with dpkg...
+    default: Selecting previously unselected package chef.
+    default: (Reading database ... 60242 files and directories currently installed.)
+    default: Preparing to unpack .../chef_18.1.0-1_amd64.deb ...
+    default: Unpacking chef (18.1.0-1) ...
+    default: Setting up chef (18.1.0-1) ...
+    default: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+==> default: Running provisioner: chef_solo...
+==> default: Generating chef JSON and uploading...
+==> default: Running chef-solo...
+==> default: [2023-01-07T17:01:43+00:00] INFO: Persisting a license for Chef Infra Client at path /etc/chef/accepted_licenses/chef_infra_client
+==> default: [2023-01-07T17:01:43+00:00] INFO: Persisting a license for Chef InSpec at path /etc/chef/accepted_licenses/inspec
+==> default: +---------------------------------------------+
+==> default: ✔ 2 product licenses accepted.
+==> default: +---------------------------------------------+
+==> default: [2023-01-07T17:01:43+00:00] INFO: Started Chef Infra Zero at chefzero://localhost:1 with repository at /tmp/vagrant-chef/6d400ed4238740ee097d17c9213c7b42 (One version per cookbook)
+==> default: Chef Infra Client, version 18.1.0
+==> default: Patents: https://www.chef.io/patents
+==> default: Infra Phase starting
+==> default: [2023-01-07T17:01:43+00:00] INFO: *** Chef Infra Client 18.1.0 ***
+==> default: [2023-01-07T17:01:43+00:00] INFO: Platform: x86_64-linux
+==> default: [2023-01-07T17:01:43+00:00] INFO: Chef-client pid: 2960
+==> default: [2023-01-07T17:01:45+00:00] INFO: Setting the run_list to ["recipe[web]", "recipe[mysql]", "recipe[wp-cli]", "recipe[wp-install]"] from CLI options
+==> default: [2023-01-07T17:01:45+00:00] INFO: Run List is [recipe[web], recipe[mysql], recipe[wp-cli], recipe[wp-install]]
+==> default: [2023-01-07T17:01:45+00:00] INFO: Run List expands to [web, mysql, wp-cli, wp-install]
+==> default: [2023-01-07T17:01:45+00:00] INFO: Starting Chef Infra Client Run for chefVagrant
+==> default: [2023-01-07T17:01:45+00:00] INFO: Running start handlers
+==> default: [2023-01-07T17:01:45+00:00] INFO: Start handlers complete.
+==> default: Resolving cookbooks for run list: ["web", "mysql", "wp-cli", "wp-install"]
+==> default: [2023-01-07T17:01:49+00:00] INFO: Loading cookbooks [web@0.1.0, mysql@0.1.0, wp-cli@0.1.0, wp-install@0.0.0]
+==> default: Synchronizing cookbooks:
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/Policyfile.lock.json in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/spec/spec_helper.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/attributes/default.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/spec/unit/recipes/default_spec.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/metadata.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/kitchen.yml in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/Policyfile.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/recipes/default.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/templates/virtual-hosts.conf.erb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/test/integration/default/default_spec.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/web/test/integration/default/spec_helper.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/attributes/source.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/Policyfile.lock.json in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/attributes/default.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/kitchen.yml in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/metadata.rb in the cache.
+==> default:   - web (0.1.0)
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/recipes/default.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/Policyfile.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/recipes/source.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/spec/spec_helper.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/spec/unit/recipes/default_spec.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/wp-cli/Policyfile.lock.json in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/recipes/package.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/spec/unit/recipes/package_spec.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/wp-cli/metadata.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/mysql/test/integration/pkg_mysql/default_spec.rb in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/wp-cli/kitchen.yml in the cache.
+==> default: [2023-01-07T17:01:49+00:00] INFO: Storing updated cookbooks/wp-cli/spec/spec_helper.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-cli/recipes/default.rb in the cache.
+==> default:   - mysql (0.1.0)
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-cli/Policyfile.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-cli/attributes/default.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-install/recipes/default.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-cli/test/integration/default/default_spec.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-cli/spec/unit/recipes/default_spec.rb in the cache.
+==> default:   - wp-cli (0.1.0)
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-install/attributes/default.rb in the cache.
+==> default: [2023-01-07T17:01:50+00:00] INFO: Storing updated cookbooks/wp-install/templates/grants.sql.erb in the cache.
+==> default:   
+==> default: - wp-install (0.0.0)
+==> default: Installing cookbook gem dependencies:
+==> default: Compiling cookbooks...
+==> default: Loading Chef InSpec profile files:
+==> default: Loading Chef InSpec input files:
+==> default: Loading Chef InSpec waiver files:
+==> default: [2023-01-07T17:01:50+00:00] WARN: A package recipe does not exist for the PLATFORM FAMILY: debian
+==> default: Converging 33 resources
+==> default: Recipe: web::default
+==> default:   * apt_update[Update the apt cache daily] action periodic (up to date)
+==> default:   * apt_package[apache2] action install
+==> default: [2023-01-07T17:02:13+00:00] INFO: apt_package[apache2] installed apache2 at 2.4.29-1ubuntu4.25
+==> default:
+==> default:
+==> default: - install version 2.4.29-1ubuntu4.25 of package apache2
+==> default:   * apt_package[php] action install
+==> default: [2023-01-07T17:02:38+00:00] INFO: apt_package[php] installed php at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php
+==> default:   * apt_package[php-cli] action install
+==> default: [2023-01-07T17:02:40+00:00] INFO: apt_package[php-cli] installed php-cli at 1:7.2+60ubuntu1
+==> default:
+==> default:
+==> default: - install version 1:7.2+60ubuntu1 of package php-cli
+==> default:   * apt_package[php-curl] action install
+==> default: [2023-01-07T17:02:44+00:00] INFO: apt_package[php-curl] installed php-curl at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php-curl
+==> default:   * apt_package[php-mbstring] action install
+==> default: [2023-01-07T17:02:49+00:00] INFO: apt_package[php-mbstring] installed php-mbstring at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php-mbstring
+==> default:   * apt_package[php-gd] action install
+==> default: [2023-01-07T17:02:59+00:00] INFO: apt_package[php-gd] installed php-gd at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php-gd
+==> default:   * apt_package[php-xml] action install
+==> default: [2023-01-07T17:03:07+00:00] INFO: apt_package[php-xml] installed php-xml at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php-xml
+==> default:   * apt_package[php-mysql] action install
+==> default: [2023-01-07T17:03:12+00:00] INFO: apt_package[php-mysql] installed php-mysql at 1:7.2+60ubuntu1
+==> default:
+==> default:     - install version 1:7.2+60ubuntu1 of package php-mysql
+==> default:   * service[apache2] action nothing
+==> default:  (skipped due to action :nothing)
+==> default:   * file[/etc/apache2/sites-enabled/000-default.conf] action delete
+==> default: [2023-01-07T17:03:12+00:00] WARN: File /etc/apache2/sites-enabled/000-default.conf managed by file[/etc/apache2/sites-enabled/000-default.conf] is really a symlink (to /etc/apache2/sites-available/000-default.conf). Managing the source file instead.
+==> default: [2023-01-07T17:03:12+00:00] WARN: Disable this warning by setting `manage_symlink_source true` on the resource
+==> default: [2023-01-07T17:03:12+00:00] WARN: In a future release, 'manage_symlink_source' will not be enabled by default
+==> default: [2023-01-07T17:03:12+00:00] INFO: file[/etc/apache2/sites-enabled/000-default.conf] deleted file at /etc/apache2/sites-enabled/000-default.conf
+==> default:
+==> default:     - delete file /etc/apache2/sites-enabled/000-default.conf
+==> default:   * template[/etc/apache2/sites-available/vagrant.conf] action create
+==> default: [2023-01-07T17:03:12+00:00] INFO: template[/etc/apache2/sites-available/vagrant.conf] created file /etc/apache2/sites-available/vagrant.conf
+==> default:
+==> default:     - create new file /etc/apache2/sites-available/vagrant.conf
+==> default: [2023-01-07T17:03:12+00:00] INFO: template[/etc/apache2/sites-available/vagrant.conf] updated file contents /etc/apache2/sites-available/vagrant.conf
+==> default:
+==> default: - update content in file /etc/apache2/sites-available/vagrant.conf from none to ac2540
+==> default:
+==> default: --- /etc/apache2/sites-available/vagrant.conf      2023-01-07 17:03:12.677787996 +0000
+==> default:     
+==> default: +++ /etc/apache2/sites-available/.chef-vagrant20230107-2960-r4mp4b.conf    2023-01-07 17:03:12.677787996 +0000
+==> default:
+==> default: @@ -1,16 +1,32 @@
+==> default:     
+==> default: +<VirtualHost *:80>
+==> default:
+==> default: +  DocumentRoot /var/www/wordpress
+==> default:
+==> default: +  <Directory /var/www/wordpress>
+==> default:
+==> default: +    Options FollowSymLinks
+==> default:     
+==> default: +    AllowOverride Limit Options FileInfo
+==> default:
+==> default: +    DirectoryIndex index.php
+==> default:     
+==> default: +    Require all granted
+==> default:
+==> default: +  </Directory>
+==> default:     
+==> default: +
+==> default:
+==> default: +  <Directory /var/www/wordpress/wp-content>
+==> default:     
+==> default: +    Options FollowSymLinks
+==> default:
+==> default: +    Require all granted
+==> default:
+==> default: +  </Directory>
+==> default:
+==> default: +  ErrorLog ${APACHE_LOG_DIR}/error.log
+==> default:
+==> default: +  CustomLog ${APACHE_LOG_DIR}/access.log combined
+==> default:
+==> default: +</VirtualHost>
+==> default:   
+==> default: * template[/etc/apache2/sites-available/wordpress.conf] action create
+==> default: [2023-01-07T17:03:12+00:00] INFO: template[/etc/apache2/sites-available/wordpress.conf] created file /etc/apache2/sites-available/wordpress.conf
+==> default:
+==> default: - create new file /etc/apache2/sites-available/wordpress.conf
+==> default: [2023-01-07T17:03:12+00:00] INFO: template[/etc/apache2/sites-available/wordpress.conf] updated file contents /etc/apache2/sites-available/wordpress.conf
+==> default:
+==> default: - update content in file /etc/apache2/sites-available/wordpress.conf from none to ac2540
+==> default:
+==> default: --- /etc/apache2/sites-available/wordpress.conf    2023-01-07 17:03:12.693795997 +0000
+==> default:
+==> default: +++ /etc/apache2/sites-available/.chef-wordpress20230107-2960-mru0m8.conf  2023-01-07 17:03:12.693795997 +0000
+==> default:
+==> default: @@ -1,16 +1,32 @@
+==> default:     
+==> default: +<VirtualHost *:80>
+==> default:
+==> default: +  DocumentRoot /var/www/wordpress
+==> default:     
+==> default: +  <Directory /var/www/wordpress>
+==> default:
+==> default: +    Options FollowSymLinks
+==> default:     
+==> default: +    AllowOverride Limit Options FileInfo
+==> default:
+==> default: +    DirectoryIndex index.php
+==> default:
+==> default: +    Require all granted
+==> default:
+==> default: +  </Directory>
+==> default:
+==> default: +  
+==> default:
+==> default: +  <Directory /var/www/wordpress/wp-content>
+==> default:     
+==> default: +    Options FollowSymLinks
+==> default:
+==> default: +    Require all granted
+==> default:
+==> default: +  </Directory>
+==> default:
+==> default: +  ErrorLog ${APACHE_LOG_DIR}/error.log
+==> default:     
+==> default: +  CustomLog ${APACHE_LOG_DIR}/access.log combined
+==> default:
+==> default: +</VirtualHost>
+==> default: [2023-01-07T17:03:12+00:00] INFO: template[/etc/apache2/sites-available/wordpress.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+==> default:
+==> default: * link[/etc/apache2/sites-enabled/vagrant.conf] action create
+==> default: [2023-01-07T17:03:12+00:00] INFO: link[/etc/apache2/sites-enabled/vagrant.conf] created
+==> default:     
+==> default: - create symlink at /etc/apache2/sites-enabled/vagrant.conf to /etc/apache2/sites-available/vagrant.conf
+==> default: [2023-01-07T17:03:12+00:00] INFO: link[/etc/apache2/sites-enabled/vagrant.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+==> default: Recipe: mysql::package
+==> default:
+==> default: * apt_package[mysql-server] action install
+==> default: [2023-01-07T17:04:31+00:00] INFO: apt_package[mysql-server] installed mysql-server at 5.7.40-0ubuntu0.18.04.1
+==> default:
+==> default:     - install version 5.7.40-0ubuntu0.18.04.1 of package mysql-server
+==> default: [2023-01-07T17:04:31+00:00] INFO: apt_package[mysql-server] sending start action to service[mysql] (immediate)
+==> default:   
+==> default: * service[mysql] action start
+==> default:  (up to date)
+==> default:   * service[mysql] action start
+==> default:  (up to date)
+==> default: Recipe: wp-cli::default
+==> default:   * apt_update[Update the apt cache daily] action periodic
+==> default:  (up to date)
+==> default:   * apt_package[git] action install
+==> default:  (up to date)
+==> default:   * apt_package[git] action upgrade
+==> default:  (up to date)
+==> default:   * apt_package[subversion] action install
+==> default: [2023-01-07T17:04:41+00:00] INFO: apt_package[subversion] installed subversion at 1.9.7-4ubuntu1.1
+==> default:
+==> default:     - install version 1.9.7-4ubuntu1.1 of package subversion
+==> default:   * apt_package[subversion] action upgrade
+==> default:  (up to date)
+==> default:   * directory[/usr/share/wp-cli] action create
+==> default: [2023-01-07T17:04:41+00:00] INFO: directory[/usr/share/wp-cli] created directory /usr/share/wp-cli
+==> default:
+==> default:     - create new directory /usr/share/wp-cli
+==> default:   * remote_file[/usr/share/wp-cli/wp-cli.phar] action create_if_missing
+==> default: [2023-01-07T17:04:43+00:00] INFO: remote_file[/usr/share/wp-cli/wp-cli.phar] created file /usr/share/wp-cli/wp-cli.phar
+==> default:
+==> default:     - create new file /usr/share/wp-cli/wp-cli.phar
+==> default: [2023-01-07T17:04:43+00:00] INFO: remote_file[/usr/share/wp-cli/wp-cli.phar] updated file contents /usr/share/wp-cli/wp-cli.phar
+==> default:
+==> default:     - update content in file /usr/share/wp-cli/wp-cli.phar from none to bbf096
+==> default:     (new content is binary, diff output suppressed)
+==> default: [2023-01-07T17:04:43+00:00] INFO: remote_file[/usr/share/wp-cli/wp-cli.phar] mode changed to 755
+==> default:
+==> default:     - change mode from '' to '0755'
+==> default:
+==> default: [2023-01-07T17:04:43+00:00] INFO: remote_file[/usr/share/wp-cli/wp-cli.phar] sending run action to bash[install wp-cli] (immediate)
+==> default:   * bash[install wp-cli] action run
+==> default: [2023-01-07T17:04:43+00:00] INFO: bash[install wp-cli] ran successfully
+==> default:
+==> default:
+==> default: - execute "bash"
+==> default:
+==> default:   * bash[install wp-cli] action nothing (skipped due to action :nothing)
+==> default:   * link[/usr/bin/wp] action create
+==> default: [2023-01-07T17:04:43+00:00] INFO: link[/usr/bin/wp] created
+==> default: 
+==> default:     - create symlink at /usr/bin/wp to /usr/share/wp-cli/bin/wp
+==> default: Recipe: wp-install::default
+==> default:
+==> default: * execute[mysql-install-wp-privileges] action nothing
+==> default:  (skipped due to action :nothing)
+==> default:   * template[/etc/mysql/wp-grants.sql] action create
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] created file /etc/mysql/wp-grants.sql
+==> default: 
+==> default:     - create new file /etc/mysql/wp-grants.sql
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] updated file contents /etc/mysql/wp-grants.sql
+==> default:
+==> default:     - update content in file /etc/mysql/wp-grants.sql from none to e88baf
+==> default:     --- /etc/mysql/wp-grants.sql   2023-01-07 17:04:43.142998000 +0000
+==> default:     +++ /etc/mysql/.chef-wp-grants20230107-2960-9u5ok8.sql 2023-01-07 17:04:43.142998000 +0000
+==> default:     @@ -1,5 +1,10 @@
+==> default:     +GRANT ALL ON wordpress.* TO 'wordpress'@'%' IDENTIFIED BY 'wordpress';
+==> default:     +GRANT ALL ON wordpress.* TO 'wordpress'@'chefVagrant' IDENTIFIED BY 'wordpress';
+==> default:     +GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'wordpress';
+==> default:     +
+==> default:     +FLUSH PRIVILEGES;
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] owner changed to 1000
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] group changed to 1000
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] mode changed to 600
+==> default:
+==> default:     - change mode from '' to '0600'
+==> default:     - change owner from '' to 'vagrant'
+==> default:     - change group from '' to 'vagrant'
+==> default: [2023-01-07T17:04:43+00:00] INFO: template[/etc/mysql/wp-grants.sql] sending run action to execute[mysql-install-wp-privileges] (immediate)
+==> default:   * execute[mysql-install-wp-privileges] action run
+==> default: 
+==> default:     [execute] mysql: [Warning] Using a password on the command line interface can be insecure.
+==> default: [2023-01-07T17:04:43+00:00] INFO: execute[mysql-install-wp-privileges] ran successfully
+==> default:
+==> default: - execute /usr/bin/mysql -u root -p"wordpress" < /etc/mysql/wp-grants.sql
+==> default:
+==> default:   * execute[create wordpress database] action run
+==> default: 
+==> default:     [execute] mysqladmin: [Warning] Using a password on the command line interface can be insecure.
+==> default: [2023-01-07T17:04:43+00:00] INFO: execute[create wordpress database] ran successfully
+==> default:     - execute /usr/bin/mysqladmin -u root -p"wordpress" create wordpress
+==> default:
+==> default:   * bash[wordpress-core-download] action run
+==> default:     [execute] Creating directory '/var/www/wordpress/'.
+==> default:               Downloading WordPress 6.1.1 (en_US)...
+==> default:               md5 hash verified: 38a0a4f7b7ec8429b2fe96de6b5d6572
+==> default:               Success: WordPress downloaded.
+==> default: [2023-01-07T17:04:53+00:00] INFO: bash[wordpress-core-download] ran successfully
+==> default:
+==> default: - execute "bash"
+==> default:   
+==> default: * file[/var/www/wordpress/wp-config.php] action delete
+==> default:  (up to date)
+==> default:
+==> default: * bash[wordpress-core-config] action run
+==> default: 
+==> default:     [execute] Success: Generated 'wp-config.php' file.
+==> default: [2023-01-07T17:04:53+00:00] INFO: bash[wordpress-core-config] ran successfully
+==> default:     - execute "bash"
+==> default:   * bash[wordpress-db-reset] action run
+==> default: 
+==> default:     [execute] Success: Database reset.
+==> default: [2023-01-07T17:04:54+00:00] INFO: bash[wordpress-db-reset] ran successfully
+==> default:     - execute "bash"
+==> default:   * bash[wordpress-core-install] action run
+==> default: 
+==> default:     [execute] sh: 1: /usr/sbin/sendmail: not found
+==> default:               Success: WordPress installed successfully.
+==> default: [2023-01-07T17:04:59+00:00] INFO: bash[wordpress-core-install] ran successfully
+==> default:     - execute "bash"
+==> default:   * bash[WordPress twentysixteen install] action run
+==> default:     [execute] 
+==> default: Installing Twenty Sixteen (2.8)
+==> default:
+==> default: Downloading installation package from https://downloads.wordpress.org/theme/twentysixteen.2.8.zip...
+==> default:               Unpacking the package...
+==> default:               Installing the theme...
+==> default:               Theme installed successfully.
+==> default:               Activating 'twentysixteen'...
+==> default:               Success: Switched to 'Twenty Sixteen' theme.
+==> default:               Success: Installed 1 of 1 themes.
+==> default: [2023-01-07T17:05:04+00:00] INFO: bash[WordPress twentysixteen install] ran successfully
+==> default:     - execute "bash"
+==> default:   * bash[Update post WordPress] action run
+==> default:     [execute] 
+==> default: Success: Updated post 1.
+==> default: [2023-01-07T17:05:04+00:00] INFO: bash[Update post WordPress] ran successfully
+==> default:     
+==> default: - execute "bash"
+==> default: [2023-01-07T17:05:04+00:00] INFO: template[/etc/apache2/sites-available/vagrant.conf] sending restart action to service[apache2] (delayed)
+==> default: Recipe: web::default
+==> default:   
+==> default: * service[apache2] action restart
+==> default: [2023-01-07T17:05:04+00:00] INFO: service[apache2] restarted
+==> default:     
+==> default: - restart service service[apache2]
+==> default: [2023-01-07T17:05:05+00:00] INFO: Chef Infra Client Run complete in 200.138576054 seconds
+==> default: Running handlers:
+==> default: [2023-01-07T17:05:05+00:00] INFO: Running report handlers
+==> default: Running handlers complete
+==> default: [2023-01-07T17:05:05+00:00] INFO: Report handlers complete
+==> default: Infra Phase complete, 28/39 resources updated in 03 minutes 21 seconds
+PS C:\Users\Angel\Unir\HAD\chef-wordpress> 

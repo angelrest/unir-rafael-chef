@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"C:/Users/Angel/Unir/HAD/chef-wordpress","disabled":false,"__vagrantfile":true},"v-csc-915a4f05f":{"id":"v-csc-915a4f05f","guestpath":"/tmp/vagrant-chef/6d400ed4238740ee097d17c9213c7b42/cookbooks","hostpath":"C:/Users/Angel/Unir/HAD/chef-wordpress/chef-repo/cookbooks","disabled":false,"__vagrantfile":true}}}

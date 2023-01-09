@@ -1,0 +1,377 @@
+I, [2023-01-08T00:18:47.425245 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Cleaning up any prior instances of <pkg-mysql-ubuntu-2004>
+I, [2023-01-08T00:18:47.426814 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Destroying <pkg-mysql-ubuntu-2004>...
+I, [2023-01-08T00:18:52.667344 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Forcing shutdown of VM...
+I, [2023-01-08T00:18:53.786908 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Destroying VM and associated drives...
+I, [2023-01-08T00:18:54.070629 #32208]  INFO -- pkg-mysql-ubuntu-2004: Vagrant instance <pkg-mysql-ubuntu-2004> destroyed.
+I, [2023-01-08T00:18:54.071963 #32208]  INFO -- pkg-mysql-ubuntu-2004: Finished destroying <pkg-mysql-ubuntu-2004> (0m6.64s).
+I, [2023-01-08T00:18:54.072581 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Testing <pkg-mysql-ubuntu-2004>
+I, [2023-01-08T00:18:54.075665 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Creating <pkg-mysql-ubuntu-2004>...
+I, [2023-01-08T00:18:56.266068 #32208]  INFO -- pkg-mysql-ubuntu-2004: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2023-01-08T00:18:57.332072 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Importing base box 'bento/ubuntu-20.04'...
+I, [2023-01-08T00:19:05.782784 #32208]  INFO -- pkg-mysql-ubuntu-2004: [KProgress: 20%[KProgress: 30%[K==> default: Matching MAC address for NAT networking...
+I, [2023-01-08T00:19:05.969912 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Checking if box 'bento/ubuntu-20.04' version '202206.03.0' is up to date...
+I, [2023-01-08T00:19:06.501891 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Setting the name of the VM: kitchen-mysql-pkg-mysql-ubuntu-2004-d4271fb1-6a83-467a-b40c-37bc6532a3b3
+I, [2023-01-08T00:19:07.428827 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Clearing any previously set network interfaces...
+I, [2023-01-08T00:19:07.492195 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Preparing network interfaces based on configuration...
+I, [2023-01-08T00:19:07.492341 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Adapter 1: nat
+I, [2023-01-08T00:19:07.554141 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Forwarding ports...
+I, [2023-01-08T00:19:07.635458 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2023-01-08T00:19:07.917762 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Running 'pre-boot' VM customizations...
+I, [2023-01-08T00:19:07.995040 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Booting VM...
+I, [2023-01-08T00:19:12.364706 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2023-01-08T00:19:12.713315 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: SSH address: 127.0.0.1:2222
+I, [2023-01-08T00:19:12.713437 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: SSH username: vagrant
+I, [2023-01-08T00:19:12.713512 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: SSH auth method: private key
+I, [2023-01-08T00:19:43.099872 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Warning: Connection aborted. Retrying...
+I, [2023-01-08T00:19:43.410659 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Warning: Connection reset. Retrying...
+I, [2023-01-08T00:19:44.644495 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: 
+I, [2023-01-08T00:19:44.644665 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2023-01-08T00:19:44.644762 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: this with a newly generated keypair for better security.
+I, [2023-01-08T00:19:46.212399 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: 
+I, [2023-01-08T00:19:46.212542 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Inserting generated public key within guest...
+I, [2023-01-08T00:19:46.830245 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Removing insecure key from the guest if it's present...
+I, [2023-01-08T00:19:47.126558 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2023-01-08T00:19:48.390573 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Machine booted and ready!
+I, [2023-01-08T00:19:48.412091 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Checking for guest additions in VM...
+I, [2023-01-08T00:19:48.464321 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: The guest additions on this VM do not match the installed version of
+I, [2023-01-08T00:19:48.464470 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2023-01-08T00:19:48.464571 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: prevent things such as shared folders from working properly. If you see
+I, [2023-01-08T00:19:48.464652 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: shared folder errors, please make sure the guest additions within the
+I, [2023-01-08T00:19:48.464730 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2023-01-08T00:19:48.464806 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: your host and reload your VM.
+I, [2023-01-08T00:19:48.464881 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: 
+I, [2023-01-08T00:19:48.464955 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: Guest Additions Version: 6.1.34
+I, [2023-01-08T00:19:48.465029 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: VirtualBox Version: 7.0
+I, [2023-01-08T00:19:48.465103 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Setting hostname...
+I, [2023-01-08T00:19:49.389224 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Mounting shared folders...
+I, [2023-01-08T00:19:49.389424 #32208]  INFO -- pkg-mysql-ubuntu-2004:     default: /tmp/omnibus/cache => C:/Users/logan/.kitchen/cache
+I, [2023-01-08T00:19:50.723057 #32208]  INFO -- pkg-mysql-ubuntu-2004: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2023-01-08T00:19:54.846833 #32208]  INFO -- pkg-mysql-ubuntu-2004: [SSH] Established
+I, [2023-01-08T00:19:54.847510 #32208]  INFO -- pkg-mysql-ubuntu-2004: Vagrant instance <pkg-mysql-ubuntu-2004> created.
+I, [2023-01-08T00:19:54.848655 #32208]  INFO -- pkg-mysql-ubuntu-2004: Finished creating <pkg-mysql-ubuntu-2004> (1m0.77s).
+I, [2023-01-08T00:19:54.849069 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Converging <pkg-mysql-ubuntu-2004>...
+I, [2023-01-08T00:19:54.945673 #32208]  INFO -- pkg-mysql-ubuntu-2004: Preparing files for transfer
+I, [2023-01-08T00:19:54.953496 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing cookbooks for Policyfile C:/Devops/Herramientas_de_automatizacion_de_despliegue/practica/tarea2/chef-wordpress/chef-repo/cookbooks/mysql/Policyfile.rb using `C:\opscode\chef-workstation\bin\chef-cli.BAT install`
+I, [2023-01-08T00:19:57.271291 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing cookbooks from lock
+I, [2023-01-08T00:19:57.312805 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing mysql 0.1.0
+I, [2023-01-08T00:19:57.323730 #32208]  INFO -- pkg-mysql-ubuntu-2004: Updating policy lock using `C:\opscode\chef-workstation\bin\chef-cli.BAT update`
+I, [2023-01-08T00:19:59.607231 #32208]  INFO -- pkg-mysql-ubuntu-2004: Building policy mysql
+I, [2023-01-08T00:19:59.607502 #32208]  INFO -- pkg-mysql-ubuntu-2004: Expanded run list: recipe[mysql::default]
+I, [2023-01-08T00:19:59.607593 #32208]  INFO -- pkg-mysql-ubuntu-2004: Caching Cookbooks...
+I, [2023-01-08T00:19:59.607672 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing mysql >= 0.0.0 from path
+I, [2023-01-08T00:20:01.483980 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:01.484154 #32208]  INFO -- pkg-mysql-ubuntu-2004: Lockfile written to C:/Devops/Herramientas_de_automatizacion_de_despliegue/practica/tarea2/chef-wordpress/chef-repo/cookbooks/mysql/Policyfile.lock.json
+I, [2023-01-08T00:20:01.495274 #32208]  INFO -- pkg-mysql-ubuntu-2004: Policy revision id: c3776105868050ccdca2317b372bbbb75341320f1a76a70332dfed4dd54ccf70
+I, [2023-01-08T00:20:01.531944 #32208]  INFO -- pkg-mysql-ubuntu-2004: Preparing dna.json
+I, [2023-01-08T00:20:01.540532 #32208]  INFO -- pkg-mysql-ubuntu-2004: Exporting cookbook dependencies from Policyfile C:/Users/logan/AppData/Local/Temp/pkg-mysql-ubuntu-2004-sandbox-20230108-32208-llnixr using `C:\opscode\chef-workstation\bin\chef-cli.BAT export`...
+I, [2023-01-08T00:20:03.778188 #32208]  INFO -- pkg-mysql-ubuntu-2004: Exported policy 'mysql' to C:/Users/logan/AppData/Local/Temp/pkg-mysql-ubuntu-2004-sandbox-20230108-32208-llnixr
+I, [2023-01-08T00:20:03.778336 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:03.778416 #32208]  INFO -- pkg-mysql-ubuntu-2004: To converge this system with the exported policy, run:
+I, [2023-01-08T00:20:03.778507 #32208]  INFO -- pkg-mysql-ubuntu-2004:   cd C:/Users/logan/AppData/Local/Temp/pkg-mysql-ubuntu-2004-sandbox-20230108-32208-llnixr
+I, [2023-01-08T00:20:03.778585 #32208]  INFO -- pkg-mysql-ubuntu-2004:   chef-client -z
+I, [2023-01-08T00:20:03.779818 #32208]  INFO -- pkg-mysql-ubuntu-2004: Removing non-cookbook files before transfer
+I, [2023-01-08T00:20:03.780604 #32208]  INFO -- pkg-mysql-ubuntu-2004: Preparing validation.pem
+I, [2023-01-08T00:20:03.781574 #32208]  INFO -- pkg-mysql-ubuntu-2004: Preparing client.rb
+I, [2023-01-08T00:20:03.823633 #32208]  INFO -- pkg-mysql-ubuntu-2004: -----> Installing Chef install only if missing package
+I, [2023-01-08T00:20:03.824157 #32208]  INFO -- pkg-mysql-ubuntu-2004: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2023-01-08T00:20:03.824451 #32208]  INFO -- pkg-mysql-ubuntu-2004: Trying wget...
+I, [2023-01-08T00:20:04.031713 #32208]  INFO -- pkg-mysql-ubuntu-2004: Download complete.
+I, [2023-01-08T00:20:04.053912 #32208]  INFO -- pkg-mysql-ubuntu-2004: ubuntu 20.04 x86_64
+I, [2023-01-08T00:20:04.054110 #32208]  INFO -- pkg-mysql-ubuntu-2004: Getting information for chef stable  for ubuntu...
+I, [2023-01-08T00:20:04.054200 #32208]  INFO -- pkg-mysql-ubuntu-2004: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=20.04&m=x86_64
+I, [2023-01-08T00:20:04.054337 #32208]  INFO -- pkg-mysql-ubuntu-2004:   to file /tmp/install.sh.11295/metadata.txt
+I, [2023-01-08T00:20:04.055451 #32208]  INFO -- pkg-mysql-ubuntu-2004: trying wget...
+I, [2023-01-08T00:20:04.149906 #32208]  INFO -- pkg-mysql-ubuntu-2004: sha1	f45a7ee73a346deba2a52fd7b03b4a0e80f24762
+I, [2023-01-08T00:20:04.150435 #32208]  INFO -- pkg-mysql-ubuntu-2004: sha256	56856c196c5b38ed918bc7c489652896cf30fab9bbcc8def14b9576e59e681f4
+I, [2023-01-08T00:20:04.150843 #32208]  INFO -- pkg-mysql-ubuntu-2004: url	https://packages.chef.io/files/stable/chef/18.1.0/ubuntu/20.04/chef_18.1.0-1_amd64.deb
+I, [2023-01-08T00:20:04.151227 #32208]  INFO -- pkg-mysql-ubuntu-2004: version	18.1.0
+I, [2023-01-08T00:20:04.151520 #32208]  INFO -- pkg-mysql-ubuntu-2004: downloaded metadata file looks valid...
+I, [2023-01-08T00:20:04.162601 #32208]  INFO -- pkg-mysql-ubuntu-2004: /tmp/omnibus/cache/chef_18.1.0-1_amd64.deb exists
+I, [2023-01-08T00:20:04.163160 #32208]  INFO -- pkg-mysql-ubuntu-2004: Comparing checksum with sha256sum...
+I, [2023-01-08T00:20:04.637748 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:04.637924 #32208]  INFO -- pkg-mysql-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2023-01-08T00:20:04.638019 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:04.638102 #32208]  INFO -- pkg-mysql-ubuntu-2004: You are installing a package without a version pin.  If you are installing
+I, [2023-01-08T00:20:04.638184 #32208]  INFO -- pkg-mysql-ubuntu-2004: on production servers via an automated process this is DANGEROUS and you will
+I, [2023-01-08T00:20:04.638267 #32208]  INFO -- pkg-mysql-ubuntu-2004: be upgraded without warning on new releases, even to new major releases.
+I, [2023-01-08T00:20:04.638353 #32208]  INFO -- pkg-mysql-ubuntu-2004: Letting the version float is only appropriate in test, development or
+I, [2023-01-08T00:20:04.638434 #32208]  INFO -- pkg-mysql-ubuntu-2004: CI/CD environments.
+I, [2023-01-08T00:20:04.638514 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:04.638598 #32208]  INFO -- pkg-mysql-ubuntu-2004: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2023-01-08T00:20:04.638751 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:04.638848 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing chef 
+I, [2023-01-08T00:20:04.638947 #32208]  INFO -- pkg-mysql-ubuntu-2004: installing with dpkg...
+I, [2023-01-08T00:20:04.694581 #32208]  INFO -- pkg-mysql-ubuntu-2004: Selecting previously unselected package chef.
+I, [2023-01-08T00:20:05.065962 #32208]  INFO -- pkg-mysql-ubuntu-2004: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 41035 files and directories currently installed.)
+I, [2023-01-08T00:20:05.066683 #32208]  INFO -- pkg-mysql-ubuntu-2004: Preparing to unpack .../cache/chef_18.1.0-1_amd64.deb ...
+I, [2023-01-08T00:20:05.077712 #32208]  INFO -- pkg-mysql-ubuntu-2004: Unpacking chef (18.1.0-1) ...
+I, [2023-01-08T00:20:15.550606 #32208]  INFO -- pkg-mysql-ubuntu-2004: Setting up chef (18.1.0-1) ...
+I, [2023-01-08T00:20:15.582901 #32208]  INFO -- pkg-mysql-ubuntu-2004: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2023-01-08T00:20:15.628374 #32208]  INFO -- pkg-mysql-ubuntu-2004: Transferring files to <pkg-mysql-ubuntu-2004>
+I, [2023-01-08T00:20:17.075189 #32208]  INFO -- pkg-mysql-ubuntu-2004: +---------------------------------------------+
+I, [2023-01-08T00:20:17.075366 #32208]  INFO -- pkg-mysql-ubuntu-2004: [32m✔[0m 2 product licenses accepted.
+I, [2023-01-08T00:20:17.075450 #32208]  INFO -- pkg-mysql-ubuntu-2004: +---------------------------------------------+
+I, [2023-01-08T00:20:17.244339 #32208]  INFO -- pkg-mysql-ubuntu-2004: Chef Infra Client, version 18.1.0
+I, [2023-01-08T00:20:17.244505 #32208]  INFO -- pkg-mysql-ubuntu-2004: Patents: https://www.chef.io/patents
+I, [2023-01-08T00:20:17.244587 #32208]  INFO -- pkg-mysql-ubuntu-2004: Infra Phase starting
+I, [2023-01-08T00:20:18.129684 #32208]  INFO -- pkg-mysql-ubuntu-2004: Creating a new client identity for pkg-mysql-ubuntu-2004 using the validator key.
+I, [2023-01-08T00:20:18.275368 #32208]  INFO -- pkg-mysql-ubuntu-2004: Using Policyfile 'mysql' at revision 'b5f5e3b238e7159b4e0648fb587cb6c0ff0f2ba0941ed487483e19604a79978f'
+I, [2023-01-08T00:20:18.275780 #32208]  INFO -- pkg-mysql-ubuntu-2004: Resolving cookbooks for run list: ["mysql::default@0.1.0 (38467ca)"]
+I, [2023-01-08T00:20:18.286687 #32208]  INFO -- pkg-mysql-ubuntu-2004: Synchronizing cookbooks:
+I, [2023-01-08T00:20:18.318094 #32208]  INFO -- pkg-mysql-ubuntu-2004:   - mysql (0.1.0)
+I, [2023-01-08T00:20:18.318512 #32208]  INFO -- pkg-mysql-ubuntu-2004: Installing cookbook gem dependencies:
+I, [2023-01-08T00:20:18.319041 #32208]  INFO -- pkg-mysql-ubuntu-2004: Compiling cookbooks...
+I, [2023-01-08T00:20:18.529338 #32208]  INFO -- pkg-mysql-ubuntu-2004: Loading Chef InSpec profile files:
+I, [2023-01-08T00:20:18.529785 #32208]  INFO -- pkg-mysql-ubuntu-2004: Loading Chef InSpec input files:
+I, [2023-01-08T00:20:18.530212 #32208]  INFO -- pkg-mysql-ubuntu-2004: Loading Chef InSpec waiver files:
+I, [2023-01-08T00:20:18.530641 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:16+00:00] WARN: A package recipe does not exist for the PLATFORM FAMILY: debian
+I, [2023-01-08T00:20:18.542092 #32208]  INFO -- pkg-mysql-ubuntu-2004: Converging 2 resources
+I, [2023-01-08T00:20:18.542520 #32208]  INFO -- pkg-mysql-ubuntu-2004: Recipe: mysql::package
+I, [2023-01-08T00:20:45.446422 #32208]  INFO -- pkg-mysql-ubuntu-2004:   * apt_package[mysql-server] action install
+I, [2023-01-08T00:20:45.446651 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.446771 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ================================================================================
+I, [2023-01-08T00:20:45.446859 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Error executing action `install` on resource 'apt_package[mysql-server]'
+I, [2023-01-08T00:20:45.447009 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ================================================================================
+I, [2023-01-08T00:20:45.447115 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.447188 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Mixlib::ShellOut::ShellCommandFailed
+I, [2023-01-08T00:20:45.447301 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ------------------------------------
+I, [2023-01-08T00:20:45.447375 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Expected process to exit with [0], but received '100'
+I, [2023-01-08T00:20:45.447442 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ---- Begin output of ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] ----
+I, [2023-01-08T00:20:45.447518 #32208]  INFO -- pkg-mysql-ubuntu-2004:     STDOUT: Reading package lists...
+I, [2023-01-08T00:20:45.447582 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Building dependency tree...
+I, [2023-01-08T00:20:45.447646 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Reading state information...
+I, [2023-01-08T00:20:45.447723 #32208]  INFO -- pkg-mysql-ubuntu-2004:     The following additional packages will be installed:
+I, [2023-01-08T00:20:45.447795 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-7
+I, [2023-01-08T00:20:45.447871 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libevent-pthreads-2.1-7 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl
+I, [2023-01-08T00:20:45.447936 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl
+I, [2023-01-08T00:20:45.448001 #32208]  INFO -- pkg-mysql-ubuntu-2004:       liblwp-mediatypes-perl libmecab2 libtimedate-perl liburi-perl mecab-ipadic
+I, [2023-01-08T00:20:45.448065 #32208]  INFO -- pkg-mysql-ubuntu-2004:       mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+I, [2023-01-08T00:20:45.448129 #32208]  INFO -- pkg-mysql-ubuntu-2004:       mysql-common mysql-server-8.0 mysql-server-core-8.0
+I, [2023-01-08T00:20:45.448198 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Suggested packages:
+I, [2023-01-08T00:20:45.448388 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libdata-dump-perl libipc-sharedcache-perl libwww-perl mailx tinyca
+I, [2023-01-08T00:20:45.448482 #32208]  INFO -- pkg-mysql-ubuntu-2004:     The following NEW packages will be installed:
+I, [2023-01-08T00:20:45.448591 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-7
+I, [2023-01-08T00:20:45.448685 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libevent-pthreads-2.1-7 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl
+I, [2023-01-08T00:20:45.448750 #32208]  INFO -- pkg-mysql-ubuntu-2004:       libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl
+I, [2023-01-08T00:20:45.448814 #32208]  INFO -- pkg-mysql-ubuntu-2004:       liblwp-mediatypes-perl libmecab2 libtimedate-perl liburi-perl mecab-ipadic
+I, [2023-01-08T00:20:45.448882 #32208]  INFO -- pkg-mysql-ubuntu-2004:       mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+I, [2023-01-08T00:20:45.448952 #32208]  INFO -- pkg-mysql-ubuntu-2004:       mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0
+I, [2023-01-08T00:20:45.449027 #32208]  INFO -- pkg-mysql-ubuntu-2004:     0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+I, [2023-01-08T00:20:45.449092 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Need to get 31.6 MB of archives.
+I, [2023-01-08T00:20:45.449159 #32208]  INFO -- pkg-mysql-ubuntu-2004:     After this operation, 262 MB of additional disk space will be used.
+I, [2023-01-08T00:20:45.449226 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mysql-common all 5.8+1.0.5ubuntu2 [7,496 B]
+I, [2023-01-08T00:20:45.449343 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ign:2 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.449424 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ign:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.449489 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libevent-core-2.1-7 amd64 2.1.11-stable-1 [89.1 kB]
+I, [2023-01-08T00:20:45.456628 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libevent-pthreads-2.1-7 amd64 2.1.11-stable-1 [7,372 B]
+I, [2023-01-08T00:20:45.456748 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libmecab2 amd64 0.996-10build1 [233 kB]
+I, [2023-01-08T00:20:45.456836 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ign:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.456908 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ign:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.457727 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:9 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-tagset-perl all 3.20-4 [12.5 kB]
+I, [2023-01-08T00:20:45.457818 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:10 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liburi-perl all 1.76-2 [77.5 kB]
+I, [2023-01-08T00:20:45.457910 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:11 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-parser-perl amd64 3.72-5 [86.3 kB]
+I, [2023-01-08T00:20:45.457984 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:12 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libcgi-pm-perl all 4.46-1 [186 kB]
+I, [2023-01-08T00:20:45.458049 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:13 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libfcgi-perl amd64 0.79-1 [33.1 kB]
+I, [2023-01-08T00:20:45.459743 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:14 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libcgi-fast-perl all 1:2.15-1 [10.5 kB]
+I, [2023-01-08T00:20:45.460008 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:15 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libencode-locale-perl all 1.05-1 [12.3 kB]
+I, [2023-01-08T00:20:45.460226 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:16 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+I, [2023-01-08T00:20:45.460345 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:17 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libtimedate-perl all 2.3200-1 [34.0 kB]
+I, [2023-01-08T00:20:45.460413 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:18 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhttp-date-perl all 6.05-1 [9,920 B]
+I, [2023-01-08T00:20:45.460480 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:19 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libio-html-perl all 1.001-1 [14.9 kB]
+I, [2023-01-08T00:20:45.460558 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:20 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liblwp-mediatypes-perl all 6.04-1 [19.5 kB]
+I, [2023-01-08T00:20:45.460660 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:21 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhttp-message-perl all 6.22-1 [76.1 kB]
+I, [2023-01-08T00:20:45.461050 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:22 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-utils amd64 0.996-10build1 [4,912 B]
+I, [2023-01-08T00:20:45.461168 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:23 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-ipadic all 2.7.0-20070801+main-2.1 [6,714 kB]
+I, [2023-01-08T00:20:45.461243 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Get:24 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-2.1 [4,380 B]
+I, [2023-01-08T00:20:45.461315 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ign:25 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server all 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.461385 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Err:2 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.461450 #32208]  INFO -- pkg-mysql-ubuntu-2004:       404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.461555 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Err:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.461629 #32208]  INFO -- pkg-mysql-ubuntu-2004:       404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.461696 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Err:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.461762 #32208]  INFO -- pkg-mysql-ubuntu-2004:       404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.461831 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Err:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.461929 #32208]  INFO -- pkg-mysql-ubuntu-2004:       404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462034 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Err:25 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server all 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.462117 #32208]  INFO -- pkg-mysql-ubuntu-2004:       404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462201 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Fetched 7,691 kB in 25s (309 kB/s)
+I, [2023-01-08T00:20:45.462284 #32208]  INFO -- pkg-mysql-ubuntu-2004:     STDERR: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-client-core-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462360 #32208]  INFO -- pkg-mysql-ubuntu-2004:     E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-client-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462428 #32208]  INFO -- pkg-mysql-ubuntu-2004:     E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server-core-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462495 #32208]  INFO -- pkg-mysql-ubuntu-2004:     E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462562 #32208]  INFO -- pkg-mysql-ubuntu-2004:     E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server_8.0.29-0ubuntu0.20.04.3_all.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.462626 #32208]  INFO -- pkg-mysql-ubuntu-2004:     E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2023-01-08T00:20:45.462692 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ---- End output of ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] ----
+I, [2023-01-08T00:20:45.462758 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Ran ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] returned 100
+I, [2023-01-08T00:20:45.462825 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.462892 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Resource Declaration:
+I, [2023-01-08T00:20:45.462956 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ---------------------
+I, [2023-01-08T00:20:45.469744 #32208]  INFO -- pkg-mysql-ubuntu-2004:     # In /tmp/kitchen/cache/cookbooks/mysql/recipes/package.rb
+I, [2023-01-08T00:20:45.469935 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.470010 #32208]  INFO -- pkg-mysql-ubuntu-2004:      10:     package package_name do
+I, [2023-01-08T00:20:45.470088 #32208]  INFO -- pkg-mysql-ubuntu-2004:      11:       action :install
+I, [2023-01-08T00:20:45.470181 #32208]  INFO -- pkg-mysql-ubuntu-2004:      12:       notifies :start, "service[mysql]", :immediately
+I, [2023-01-08T00:20:45.470289 #32208]  INFO -- pkg-mysql-ubuntu-2004:      13:     end
+I, [2023-01-08T00:20:45.470370 #32208]  INFO -- pkg-mysql-ubuntu-2004:      14:   end
+I, [2023-01-08T00:20:45.474663 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.474774 #32208]  INFO -- pkg-mysql-ubuntu-2004:     Compiled Resource:
+I, [2023-01-08T00:20:45.474847 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ------------------
+I, [2023-01-08T00:20:45.474919 #32208]  INFO -- pkg-mysql-ubuntu-2004:     # Declared in /tmp/kitchen/cache/cookbooks/mysql/recipes/package.rb:10:in `block in from_file'
+I, [2023-01-08T00:20:45.475001 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.475079 #32208]  INFO -- pkg-mysql-ubuntu-2004:     apt_package("mysql-server") do
+I, [2023-01-08T00:20:45.475158 #32208]  INFO -- pkg-mysql-ubuntu-2004:       package_name "mysql-server"
+I, [2023-01-08T00:20:45.475238 #32208]  INFO -- pkg-mysql-ubuntu-2004:       action [:install]
+I, [2023-01-08T00:20:45.475313 #32208]  INFO -- pkg-mysql-ubuntu-2004:       default_guard_interpreter :default
+I, [2023-01-08T00:20:45.475391 #32208]  INFO -- pkg-mysql-ubuntu-2004:       declared_type :package
+I, [2023-01-08T00:20:45.475469 #32208]  INFO -- pkg-mysql-ubuntu-2004:       cookbook_name "mysql"
+I, [2023-01-08T00:20:45.475546 #32208]  INFO -- pkg-mysql-ubuntu-2004:       recipe_name "package"
+I, [2023-01-08T00:20:45.475623 #32208]  INFO -- pkg-mysql-ubuntu-2004:     end
+I, [2023-01-08T00:20:45.475700 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.480464 #32208]  INFO -- pkg-mysql-ubuntu-2004:     System Info:
+I, [2023-01-08T00:20:45.480556 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ------------
+I, [2023-01-08T00:20:45.480625 #32208]  INFO -- pkg-mysql-ubuntu-2004:     chef_version=18.1.0
+I, [2023-01-08T00:20:45.480692 #32208]  INFO -- pkg-mysql-ubuntu-2004:     platform=ubuntu
+I, [2023-01-08T00:20:45.480759 #32208]  INFO -- pkg-mysql-ubuntu-2004:     platform_version=20.04
+I, [2023-01-08T00:20:45.480825 #32208]  INFO -- pkg-mysql-ubuntu-2004:     ruby=ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+I, [2023-01-08T00:20:45.480891 #32208]  INFO -- pkg-mysql-ubuntu-2004:     program_name=/opt/chef/bin/chef-client
+I, [2023-01-08T00:20:45.480958 #32208]  INFO -- pkg-mysql-ubuntu-2004:     executable=/opt/chef/bin/chef-client
+I, [2023-01-08T00:20:45.481026 #32208]  INFO -- pkg-mysql-ubuntu-2004:     
+I, [2023-01-08T00:20:45.482695 #32208]  INFO -- pkg-mysql-ubuntu-2004: 
+I, [2023-01-08T00:20:45.482782 #32208]  INFO -- pkg-mysql-ubuntu-2004: Running handlers:
+I, [2023-01-08T00:20:45.483186 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] ERROR: Running exception handlers
+I, [2023-01-08T00:20:45.483456 #32208]  INFO -- pkg-mysql-ubuntu-2004: Running handlers complete
+I, [2023-01-08T00:20:45.483688 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] ERROR: Exception handlers complete
+I, [2023-01-08T00:20:45.483935 #32208]  INFO -- pkg-mysql-ubuntu-2004: Infra Phase failed. 0 resources updated in 28 seconds
+I, [2023-01-08T00:20:45.484215 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2023-01-08T00:20:45.484378 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2023-01-08T00:20:45.484453 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] FATAL: PLEASE PROVIDE THE CONTENTS OF THE stacktrace.out FILE (above) IF YOU FILE A BUG REPORT
+I, [2023-01-08T00:20:45.485076 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] FATAL: ---------------------------------------------------------------------------------------
+I, [2023-01-08T00:20:45.485374 #32208]  INFO -- pkg-mysql-ubuntu-2004: [2023-01-08T05:20:43+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: apt_package[mysql-server] (mysql::package line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '100'
+I, [2023-01-08T00:20:45.485839 #32208]  INFO -- pkg-mysql-ubuntu-2004: ---- Begin output of ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] ----
+I, [2023-01-08T00:20:45.486098 #32208]  INFO -- pkg-mysql-ubuntu-2004: STDOUT: Reading package lists...
+I, [2023-01-08T00:20:45.487047 #32208]  INFO -- pkg-mysql-ubuntu-2004: Building dependency tree...
+I, [2023-01-08T00:20:45.487138 #32208]  INFO -- pkg-mysql-ubuntu-2004: Reading state information...
+I, [2023-01-08T00:20:45.487210 #32208]  INFO -- pkg-mysql-ubuntu-2004: The following additional packages will be installed:
+I, [2023-01-08T00:20:45.487279 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-7
+I, [2023-01-08T00:20:45.487347 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libevent-pthreads-2.1-7 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl
+I, [2023-01-08T00:20:45.487445 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl
+I, [2023-01-08T00:20:45.487543 #32208]  INFO -- pkg-mysql-ubuntu-2004:   liblwp-mediatypes-perl libmecab2 libtimedate-perl liburi-perl mecab-ipadic
+I, [2023-01-08T00:20:45.487616 #32208]  INFO -- pkg-mysql-ubuntu-2004:   mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+I, [2023-01-08T00:20:45.487684 #32208]  INFO -- pkg-mysql-ubuntu-2004:   mysql-common mysql-server-8.0 mysql-server-core-8.0
+I, [2023-01-08T00:20:45.487754 #32208]  INFO -- pkg-mysql-ubuntu-2004: Suggested packages:
+I, [2023-01-08T00:20:45.487821 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libdata-dump-perl libipc-sharedcache-perl libwww-perl mailx tinyca
+I, [2023-01-08T00:20:45.487892 #32208]  INFO -- pkg-mysql-ubuntu-2004: The following NEW packages will be installed:
+I, [2023-01-08T00:20:45.487960 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libcgi-fast-perl libcgi-pm-perl libencode-locale-perl libevent-core-2.1-7
+I, [2023-01-08T00:20:45.488028 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libevent-pthreads-2.1-7 libfcgi-perl libhtml-parser-perl libhtml-tagset-perl
+I, [2023-01-08T00:20:45.488096 #32208]  INFO -- pkg-mysql-ubuntu-2004:   libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl
+I, [2023-01-08T00:20:45.488163 #32208]  INFO -- pkg-mysql-ubuntu-2004:   liblwp-mediatypes-perl libmecab2 libtimedate-perl liburi-perl mecab-ipadic
+I, [2023-01-08T00:20:45.488230 #32208]  INFO -- pkg-mysql-ubuntu-2004:   mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0
+I, [2023-01-08T00:20:45.488316 #32208]  INFO -- pkg-mysql-ubuntu-2004:   mysql-common mysql-server mysql-server-8.0 mysql-server-core-8.0
+I, [2023-01-08T00:20:45.488400 #32208]  INFO -- pkg-mysql-ubuntu-2004: 0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+I, [2023-01-08T00:20:45.488474 #32208]  INFO -- pkg-mysql-ubuntu-2004: Need to get 31.6 MB of archives.
+I, [2023-01-08T00:20:45.488543 #32208]  INFO -- pkg-mysql-ubuntu-2004: After this operation, 262 MB of additional disk space will be used.
+I, [2023-01-08T00:20:45.488647 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mysql-common all 5.8+1.0.5ubuntu2 [7,496 B]
+I, [2023-01-08T00:20:45.488737 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ign:2 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.488814 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ign:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.488887 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libevent-core-2.1-7 amd64 2.1.11-stable-1 [89.1 kB]
+I, [2023-01-08T00:20:45.488964 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:5 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libevent-pthreads-2.1-7 amd64 2.1.11-stable-1 [7,372 B]
+I, [2023-01-08T00:20:45.489035 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:6 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libmecab2 amd64 0.996-10build1 [233 kB]
+I, [2023-01-08T00:20:45.489104 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ign:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.489172 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ign:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.489239 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:9 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-tagset-perl all 3.20-4 [12.5 kB]
+I, [2023-01-08T00:20:45.489307 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:10 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liburi-perl all 1.76-2 [77.5 kB]
+I, [2023-01-08T00:20:45.489375 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:11 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-parser-perl amd64 3.72-5 [86.3 kB]
+I, [2023-01-08T00:20:45.489442 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:12 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libcgi-pm-perl all 4.46-1 [186 kB]
+I, [2023-01-08T00:20:45.489510 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:13 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libfcgi-perl amd64 0.79-1 [33.1 kB]
+I, [2023-01-08T00:20:45.489578 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:14 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libcgi-fast-perl all 1:2.15-1 [10.5 kB]
+I, [2023-01-08T00:20:45.489645 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:15 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libencode-locale-perl all 1.05-1 [12.3 kB]
+I, [2023-01-08T00:20:45.489719 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:16 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhtml-template-perl all 2.97-1 [59.0 kB]
+I, [2023-01-08T00:20:45.489786 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:17 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libtimedate-perl all 2.3200-1 [34.0 kB]
+I, [2023-01-08T00:20:45.489852 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:18 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhttp-date-perl all 6.05-1 [9,920 B]
+I, [2023-01-08T00:20:45.489921 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:19 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libio-html-perl all 1.001-1 [14.9 kB]
+I, [2023-01-08T00:20:45.489988 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:20 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liblwp-mediatypes-perl all 6.04-1 [19.5 kB]
+I, [2023-01-08T00:20:45.490063 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:21 http://in.archive.ubuntu.com/ubuntu focal/main amd64 libhttp-message-perl all 6.22-1 [76.1 kB]
+I, [2023-01-08T00:20:45.490132 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:22 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-utils amd64 0.996-10build1 [4,912 B]
+I, [2023-01-08T00:20:45.490201 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:23 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-ipadic all 2.7.0-20070801+main-2.1 [6,714 kB]
+I, [2023-01-08T00:20:45.490279 #32208]  INFO -- pkg-mysql-ubuntu-2004: Get:24 http://in.archive.ubuntu.com/ubuntu focal/main amd64 mecab-ipadic-utf8 all 2.7.0-20070801+main-2.1 [4,380 B]
+I, [2023-01-08T00:20:45.490352 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ign:25 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server all 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.490420 #32208]  INFO -- pkg-mysql-ubuntu-2004: Err:2 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.501030 #32208]  INFO -- pkg-mysql-ubuntu-2004:   404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.501148 #32208]  INFO -- pkg-mysql-ubuntu-2004: Err:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.501236 #32208]  INFO -- pkg-mysql-ubuntu-2004:   404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.501327 #32208]  INFO -- pkg-mysql-ubuntu-2004: Err:7 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-core-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.501409 #32208]  INFO -- pkg-mysql-ubuntu-2004:   404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.501488 #32208]  INFO -- pkg-mysql-ubuntu-2004: Err:8 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-8.0 amd64 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.501567 #32208]  INFO -- pkg-mysql-ubuntu-2004:   404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.501646 #32208]  INFO -- pkg-mysql-ubuntu-2004: Err:25 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server all 8.0.29-0ubuntu0.20.04.3
+I, [2023-01-08T00:20:45.501736 #32208]  INFO -- pkg-mysql-ubuntu-2004:   404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.501838 #32208]  INFO -- pkg-mysql-ubuntu-2004: Fetched 7,691 kB in 25s (309 kB/s)
+I, [2023-01-08T00:20:45.501940 #32208]  INFO -- pkg-mysql-ubuntu-2004: STDERR: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-client-core-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.502010 #32208]  INFO -- pkg-mysql-ubuntu-2004: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-client-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.502083 #32208]  INFO -- pkg-mysql-ubuntu-2004: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server-core-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.502153 #32208]  INFO -- pkg-mysql-ubuntu-2004: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server-8.0_8.0.29-0ubuntu0.20.04.3_amd64.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.502220 #32208]  INFO -- pkg-mysql-ubuntu-2004: E: Failed to fetch http://in.archive.ubuntu.com/ubuntu/pool/main/m/mysql-8.0/mysql-server_8.0.29-0ubuntu0.20.04.3_all.deb  404  Not Found [IP: 185.125.190.36 80]
+I, [2023-01-08T00:20:45.502290 #32208]  INFO -- pkg-mysql-ubuntu-2004: E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+I, [2023-01-08T00:20:45.502358 #32208]  INFO -- pkg-mysql-ubuntu-2004: ---- End output of ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] ----
+I, [2023-01-08T00:20:45.502425 #32208]  INFO -- pkg-mysql-ubuntu-2004: Ran ["apt-get", "-q", "-y", "--allow-downgrades", "-o", "Dpkg::Options::=--force-confdef", "-o", "Dpkg::Options::=--force-confold", "install", "mysql-server=8.0.29-0ubuntu0.20.04.3"] returned 100
+E, [2023-01-08T00:20:45.526286 #32208] ERROR -- pkg-mysql-ubuntu-2004: Converge failed on instance <pkg-mysql-ubuntu-2004>.
+E, [2023-01-08T00:20:45.526479 #32208] ERROR -- pkg-mysql-ubuntu-2004: ------Exception-------
+E, [2023-01-08T00:20:45.526551 #32208] ERROR -- pkg-mysql-ubuntu-2004: Class: Kitchen::ActionFailed
+E, [2023-01-08T00:20:45.526618 #32208] ERROR -- pkg-mysql-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2023-01-08T00:20:45.526683 #32208] ERROR -- pkg-mysql-ubuntu-2004: ----------------------
+E, [2023-01-08T00:20:45.526776 #32208] ERROR -- pkg-mysql-ubuntu-2004: ------Backtrace-------
+E, [2023-01-08T00:20:45.526844 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2023-01-08T00:20:45.526907 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2023-01-08T00:20:45.526987 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2023-01-08T00:20:45.527058 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2023-01-08T00:20:45.527122 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-01-08T00:20:45.527186 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-08T00:20:45.527248 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:523:in `action'
+E, [2023-01-08T00:20:45.527311 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2023-01-08T00:20:45.527373 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-01-08T00:20:45.527435 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-01-08T00:20:45.527497 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-01-08T00:20:45.527559 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `each'
+E, [2023-01-08T00:20:45.527632 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-01-08T00:20:45.527695 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2023-01-08T00:20:45.527757 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2023-01-08T00:20:45.527831 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-08T00:20:45.527894 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:186:in `test'
+E, [2023-01-08T00:20:45.527961 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-01-08T00:20:45.528027 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-01-08T00:20:45.528092 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-01-08T00:20:45.528155 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-01-08T00:20:45.528217 #32208] ERROR -- pkg-mysql-ubuntu-2004: ----End Backtrace-----
+E, [2023-01-08T00:20:45.528280 #32208] ERROR -- pkg-mysql-ubuntu-2004: ---Nested Exception---
+E, [2023-01-08T00:20:45.528341 #32208] ERROR -- pkg-mysql-ubuntu-2004: Class: Kitchen::Transport::SshFailed
+E, [2023-01-08T00:20:45.528404 #32208] ERROR -- pkg-mysql-ubuntu-2004: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2023-01-08T00:20:45.528466 #32208] ERROR -- pkg-mysql-ubuntu-2004: ----------------------
+E, [2023-01-08T00:20:45.528527 #32208] ERROR -- pkg-mysql-ubuntu-2004: ------Backtrace-------
+E, [2023-01-08T00:20:45.528589 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/provisioner/base.rb:99:in `rescue in call'
+E, [2023-01-08T00:20:45.528659 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/provisioner/base.rb:98:in `call'
+E, [2023-01-08T00:20:45.528722 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:419:in `block in converge_action'
+E, [2023-01-08T00:20:45.528784 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:563:in `synchronize_or_call'
+E, [2023-01-08T00:20:45.528855 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:524:in `block in action'
+E, [2023-01-08T00:20:45.528920 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-08T00:20:45.528985 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:523:in `action'
+E, [2023-01-08T00:20:45.529047 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:414:in `converge_action'
+E, [2023-01-08T00:20:45.529109 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2023-01-08T00:20:45.529171 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2023-01-08T00:20:45.529233 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2023-01-08T00:20:45.529294 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `each'
+E, [2023-01-08T00:20:45.529357 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2023-01-08T00:20:45.529419 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:161:in `verify'
+E, [2023-01-08T00:20:45.529505 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:190:in `block in test'
+E, [2023-01-08T00:20:45.529598 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2023-01-08T00:20:45.529664 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/instance.rb:186:in `test'
+E, [2023-01-08T00:20:45.529726 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `public_send'
+E, [2023-01-08T00:20:45.529788 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2023-01-08T00:20:45.529849 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.3.2/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2023-01-08T00:20:45.529911 #32208] ERROR -- pkg-mysql-ubuntu-2004: C:/opscode/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2023-01-08T00:20:45.529990 #32208] ERROR -- pkg-mysql-ubuntu-2004: ----End Backtrace-----

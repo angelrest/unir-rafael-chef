@@ -1,0 +1,7 @@
+DEPENDENCIES
+  mysql
+    path: .
+    metadata: true
+
+GRAPH
+  mysql (0.1.0)

@@ -1,12 +1,12 @@
 #
-# Cookbook:: ansible
-# Spec:: source
+# Cookbook:: mysql
+# Spec:: install
 #
 # Copyright:: 2023, The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'ansible::source' do
+describe 'mysql::install' do
   context 'When all attributes are default, on Ubuntu 20.04' do
     # for a complete list of available platforms and versions see:
     # https://github.com/chefspec/fauxhai/blob/main/PLATFORMS.md
@@ -17,19 +17,6 @@ describe 'ansible::source' do
         '20.04' => ['mysql-server'],
       }
     }
-
-    describe 'adds a apt_repository with default action' do
-      it { is_expected.to add_apt_repository('default_action') }
-      it { is_expected.to_not add_apt_repository('not_default_action') }
-    end
-
-    describe 'installs a apt_repository with an explicit action' do
-      it { is_expected.to add_apt_repository('explicit_action_ubuntu') }
-    end
-
-    describe 'removes a apt_repository with default action' do
-      it { is_expected.to remove_apt_repository('explicit_remove_action') }
-    end
 
     # Proceso de actualización--------------------------------------------------
     describe 'updates apt repo' do
@@ -54,5 +41,19 @@ describe 'ansible::source' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+  end
+
+  context 'When all attributes are default, on CentOS 8' do
+    # for a complete list of available platforms and versions see:
+    # https://github.com/chefspec/fauxhai/blob/main/PLATFORMS.md
+    platform 'centos', '8'
+
+    # it "should include the mysql'" do
+    #   expect(chef_run).to include_recipe('mysql::install')
+    # end
+
+    # it 'converges successfully' do
+    #   expect { chef_run }.to_not raise_error
+    # end
   end
 end
